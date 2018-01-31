@@ -5,6 +5,8 @@ import { AppModule } from './app/app.module';
 import { environment } from './environments/environment';
 
 import 'hammerjs';
+import 'rxjs/Rx';
+import 'rxjs/operators/map';
 
 if (environment.production) {
   enableProdMode();

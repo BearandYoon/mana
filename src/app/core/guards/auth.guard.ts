@@ -15,7 +15,8 @@ export class AuthGuard implements CanActivate {
   canActivate() {
     const xrsf_token = this.localStorageService.get(environment.localStorage.xrsf_token);
     const falcon_token = this.localStorageService.get(environment.localStorage.falcon_token);
-    if ( xrsf_token && falcon_token) {
+
+    if ( xrsf_token && falcon_token ) {
       return true;
     }
 

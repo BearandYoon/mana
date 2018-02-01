@@ -1,3 +1,106 @@
-<p>
-  main works!
-</p>
+<section class="hero">
+  <div class="container">
+    <div class="row content-wrapper">
+      <div class="col-md-10 mx-auto">
+        <mat-card>
+          <mat-card-header>
+            <mat-card-title><h4>User Information</h4></mat-card-title>
+          </mat-card-header>
+          <mat-divider></mat-divider>
+          <mat-card-content class="user-info-container">
+            <div class="W100">
+              <label>
+                id :
+              </label>
+              <span>{{user?.id}}</span>
+            </div>
+            <div class="W100">
+              <label>
+                username :
+              </label>
+              <span>{{user?.username}}</span>
+            </div>
+            <div class="W100">
+              <label>
+                firstname :
+              </label>
+              <span>{{user?.firstname}}</span>
+            </div>
+            <div class="W100">
+              <label>
+                lastname :
+              </label>
+              <span>{{user?.lastname}}</span>
+            </div>
+            <div class="W100">
+              <label>
+                email :
+              </label>
+              <span>{{user?.email}}</span>
+            </div>
+          </mat-card-content>
+        </mat-card>
+      </div>
+    </div>
+    <div class="row content-wrapper">
+      <div class="col-md-10 mx-auto">
+        <mat-card>
+          <mat-card-header>
+            <mat-card-title><h4>Entity Information</h4></mat-card-title>
+          </mat-card-header>
+          <mat-divider></mat-divider>
+          <mat-card-content class="user-info-container">
+            <div class="W100">
+              <label>
+                id :
+              </label>
+              <span>{{user?.entity?.id}}</span>
+            </div>
+            <div class="W100">
+              <label>
+                username :
+              </label>
+              <span>{{user?.entity?.company}}</span>
+            </div>
+            <div class="W100">
+              <label>
+                street :
+              </label>
+              <span>{{user?.entity?.street}}</span>
+            </div>
+            <div class="W100">
+              <label>
+                zip :
+              </label>
+              <span>{{user?.entity?.zip}}</span>
+            </div>
+            <div class="W100">
+              <label>
+                city :
+              </label>
+              <span>{{user?.entity?.city}}</span>
+            </div>
+            <div class="W100">
+              <label>
+                country :
+              </label>
+              <span>{{user?.entity?.country}}</span>
+            </div>
+            <div class="W100">
+              <label>
+                phone :
+              </label>
+              <span>{{user?.entity?.phone}}</span>
+            </div>
+            <div class="W100">
+              <label>
+                email :
+              </label>
+              <span>{{user?.entity?.email}}</span>
+            </div>
+          </mat-card-content>
+        </mat-card>
+      </div>
+    </div>
+  </div>
+</section>

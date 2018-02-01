@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AuthService } from '../../core/services/auth.service';
+import { IUser } from '../../core/interfaces/user';
 
 @Component({
   selector: 'app-main',
@@ -8,6 +9,7 @@ import { AuthService } from '../../core/services/auth.service';
 })
 export class MainComponent implements OnInit {
 
+  user: IUser;
   constructor(
     private authService: AuthService
   ) { }
@@ -18,9 +20,9 @@ export class MainComponent implements OnInit {
 
   async getUser() {
     try {
-      const res = await this.authService.getUser().toPromise();
-      console.log(res);
-    } catch(e) {
+      const res: any = await this.authService.getUser().toPromise();
+      this.user = res.user;
+    } catch (e) {
 
     } finally {
 

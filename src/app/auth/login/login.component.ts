@@ -32,6 +32,7 @@ export class LoginComponent implements OnInit {
   }
 
   async onSubmit() {
+    this.snackBar.dismiss();
     try {
       this.isLoading = true;
       const res: any = await this.authService.login(this.email, Md5.hashStr(this.password), this.captcha).toPromise();
@@ -39,7 +40,7 @@ export class LoginComponent implements OnInit {
         this.router.navigate(['/main']);
       }
     } catch (e) {
-      this.snackBar.open('Can not find matched login.')
+      this.snackBar.open('Can not find matched login.');
     } finally {
       this.captchaEl.reset();
       this.isLoading = false;

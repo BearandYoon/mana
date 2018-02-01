@@ -3,7 +3,7 @@ import { MatSnackBar } from '@angular/material';
 import { ReCaptchaComponent } from 'angular2-recaptcha';
 import { Router } from '@angular/router';
 import { environment } from '../../../environments/environment';
-import { Md5 } from 'ts-md5/dist/md5'
+import { Md5 } from 'ts-md5/dist/md5';
 import { AuthService } from '../../core/services/auth.service';
 
 @Component({
@@ -29,6 +29,7 @@ export class LoginComponent implements OnInit {
   ) { }
 
   ngOnInit() {
+    console.log('reCapture key = ', this.googleSiteKey);
   }
 
   async onSubmit() {

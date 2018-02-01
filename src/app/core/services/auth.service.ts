@@ -23,7 +23,7 @@ export class AuthService {
       this.localStorageService.set(environment.localStorage.falcon_token, falcon);
       this.localStorageService.set(environment.localStorage.xrsf_token, xrsf);
       return {success: true};
-    })
+    });
   }
 
   getUser() {

@@ -22,7 +22,7 @@ export class AuthService {
       const xrsf = x.headers.get('X-XSRF-TOKEN');
       this.localStorageService.set(environment.localStorage.falcon_token, falcon);
       this.localStorageService.set(environment.localStorage.xrsf_token, xrsf);
-      return {success: true}
+      return {success: true};
     })
   }
 

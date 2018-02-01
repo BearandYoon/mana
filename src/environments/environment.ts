@@ -11,5 +11,5 @@ export const environment = {
     prefix: 'mana',
     xrsf_token: 'xrsf_token',
     falcon_token: 'falcon_token'
-  },
+  }
 };

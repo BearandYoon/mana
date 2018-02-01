@@ -15,8 +15,8 @@ export class LoginComponent implements OnInit {
 
   @ViewChild(ReCaptchaComponent) captchaEl: ReCaptchaComponent;
 
-  email = 'developertest@amalyze.com';
-  password = 'Iilo1ail';
+  email = '';
+  password = '';
   captcha = '';
   googleSiteKey = environment.siteKey;
 
